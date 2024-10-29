@@ -94,18 +94,18 @@ body {
 
 .logo {
   width: 250px;
-  height: 230px; /* Set the size of the logo */
-  background-image: url("logo.png"); /* Add logo.png as a background */
-  background-size: contain; /* Adjust image to fit proportionally */
+  height: 230px; /* Logonun boyutunu belirleyin */
+  background-image: url("logo.png"); /* logo.png dosyasını arka plan olarak ekleyin */
+  background-size: contain; /* Resmin boyutuna göre orantılı şekilde ayarlar */
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10; /* Bring the logo to the front */
-  filter: brightness(0) invert(1); /* Make it white */
-  opacity: 0.9; /* Add slight transparency */
+  z-index: 10; /* Logoyu diğer elemanların üstüne taşır */
+  filter: brightness(0) invert(1); /* Beyaz renk yapar */
+  opacity: 0.9; /* Hafif şeffaflık ekleyin */
 }
 
 /* Add this for mobile responsiveness */
@@ -135,29 +135,29 @@ body {
   }
 
   .progressDiv {
-    height: 7px; /* Make it thicker */
-    width: 90%; /* Bring it closer to the edges */
-    margin: 20px auto; /* Center align */
-    cursor: pointer; /* Indicate it's clickable on mobile */
+    height: 7px; /* Daha kalın hale getir */
+    width: 90%; /* Kenarlara daha yakın yap */
+    margin: 20px auto; /* Ortaya hizala */
+    cursor: pointer; /* Mobilde tıklanabilir olduğunu göstermek için */
   }
 
   .logo {
-    width: 210px; /* Smaller size on mobile */
-    height: 210px;
-    top: 5px; /* Position closer to the top */
+    width: 230px; /* Mobilde daha küçük boyut */
+    height: 230px;
+    top: 5px; /* Daha yukarıda durması için */
   }
 }
 
 @media (max-width: 375px) {
-  /* iPhone SE screen width */
+  /* iPhone SE ekran genişliği */
   .logo {
-    width: 170px; /* Reduce size for smaller screens */
+    width: 170px; /* Küçük ekranda daha iyi görünmesi için boyutu küçült */
     height: 170px;
-    top: -30px; /* Position closer to the top */
+    top: -30px; /* Ekranın üst kısmına daha yakın konumlandır */
   }
 
   .mainDiv {
-    width: 280px; /* Adjust for smaller screens */
+    width: 280px; /* Küçük ekrana daha uygun hale getirmek için */
     height: 400px;
   }
 
@@ -165,13 +165,14 @@ body {
     width: 240px;
     height: 240px;
     left: 20px;
+  }
+}
 
-
-    @media screen and (min-width: 1280px) and (max-width: 1280px) and (min-height: 720px) and (max-height: 720px) {
+@media screen and (min-width: 1280px) and (max-width: 1280px) and (min-height: 720px) and (max-height: 720px) {
   .logo {
-    width: 170px; 
+    width: 170px;
     height: 170px;
-    top: -30px;
+    top: -30px; 
   }
 
   .mainDiv {
@@ -194,6 +195,4 @@ body {
   bottom: 10px; /* Slightly above the bottom edge */
   width: 100%; /* Stretch across the width of the page */
   opacity: 0.6; /* Add transparency */
-}
-  }
 }
