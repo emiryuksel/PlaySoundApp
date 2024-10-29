@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlaySound</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="icon" href="icon.png" type="image/png" />
+  </head>
+  <body>
+    <div class="logo"></div>
+
+    <div class="mainDiv">
+      <div class="imgDiv">
+        <img src="img/billiejean.jpg" alt="" />
+      </div>
+      <div class="titleDiv">
+        <h2 class="title" id="title">Billie Jean</h2>
+        <h3 class="creator" id="creator">Michael Jackson</h3>
+      </div>
+      <audio src="music/billiejean.mp3"></audio>
+      <div class="progressDiv" id="progressDiv">
+        <div class="progress" id="progress"></div>
+        <div class="timeDiv">
+          <span id="currentTime">0:00</span>
+          <span id="totalTime">4:54</span>
+        </div>
+      </div>
+      <div class="musicControlDiv">
+        <i class="icon fa-solid fa-backward-step" id="prev"></i>
+        <i class="icon fa-solid fa-play" id="play"></i>
+        <i class="icon fa-solid fa-forward-step" id="next"></i>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
