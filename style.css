@@ -165,5 +165,35 @@ body {
     width: 240px;
     height: 240px;
     left: 20px;
+
+
+    @media screen and (min-width: 1280px) and (max-width: 1280px) and (min-height: 720px) and (max-height: 720px) {
+  .logo {
+    width: 170px; 
+    height: 170px;
+    top: -30px;
+  }
+
+  .mainDiv {
+    width: 350px;
+    height: 450px;
+  }
+
+  .imgDiv {
+    width: 280px;
+    height: 280px;
+    left: 35px;
+  }
+}
+
+.footer-note {
+  font-size: 14px; /* Small font size */
+  color: #888; /* Light gray color */
+  text-align: center; /* Center align */
+  position: fixed; /* Fix to the bottom */
+  bottom: 10px; /* Slightly above the bottom edge */
+  width: 100%; /* Stretch across the width of the page */
+  opacity: 0.6; /* Add transparency */
+}
   }
 }
