@@ -197,3 +197,7 @@ body {
   width: 100%; /* Stretch across the width of the page */
   opacity: 0.6; /* Add transparency */
 }
+
+.progress:hover{
+  background-color:#e0e0e0
+}
