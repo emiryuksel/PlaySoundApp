@@ -94,18 +94,18 @@ body {
 
 .logo {
   width: 250px;
-  height: 230px; /* Logonun boyutunu belirleyin */
-  background-image: url("logo.png"); /* logo.png dosyasını arka plan olarak ekleyin */
-  background-size: contain; /* Resmin boyutuna göre orantılı şekilde ayarlar */
+  height: 230px; /* Define the size of the logo */
+  background-image: url("logo.png"); /* Add the logo.png file as background */
+  background-size: contain; /* Adjust proportionally to the image size */
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10; /* Logoyu diğer elemanların üstüne taşır */
-  filter: brightness(0) invert(1); /* Beyaz renk yapar */
-  opacity: 0.9; /* Hafif şeffaflık ekleyin */
+  z-index: 10; /* Brings the logo above other elements */
+  filter: brightness(0) invert(1); /* Makes it white */
+  opacity: 0.9; /* Add slight transparency */
 }
 
 /* Add this for mobile responsiveness */
@@ -135,29 +135,29 @@ body {
   }
 
   .progressDiv {
-    height: 7px; /* Daha kalın hale getir */
-    width: 90%; /* Kenarlara daha yakın yap */
-    margin: 20px auto; /* Ortaya hizala */
-    cursor: pointer; /* Mobilde tıklanabilir olduğunu göstermek için */
+    height: 7px; /* Make thicker */
+    width: 90%; /* Bring closer to the edges */
+    margin: 20px auto; /* Center align */
+    cursor: pointer; /* Show it is clickable on mobile */
   }
 
   .logo {
-    width: 230px; /* Mobilde daha küçük boyut */
+    width: 230px; /* Smaller size on mobile */
     height: 230px;
-    top: 5px; /* Daha yukarıda durması için */
+    top: -20px; /* Position higher up */
   }
 }
 
 @media (max-width: 375px) {
-  /* iPhone SE ekran genişliği */
+  /* iPhone SE screen width */
   .logo {
-    width: 170px; /* Küçük ekranda daha iyi görünmesi için boyutu küçült */
+    width: 170px; /* Resize for better appearance on small screens */
     height: 170px;
-    top: -30px; /* Ekranın üst kısmına daha yakın konumlandır */
+    top: -30px; /* Position closer to the top */
   }
 
   .mainDiv {
-    width: 280px; /* Küçük ekrana daha uygun hale getirmek için */
+    width: 280px; /* Adjust for smaller screens */
     height: 400px;
   }
 
@@ -168,11 +168,12 @@ body {
   }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1280px) and (min-height: 720px) and (max-height: 720px) {
+@media screen and (min-width: 1280px) and (max-width: 1280px) and (min-height: 620px) and (max-height: 720px) {
   .logo {
     width: 170px;
     height: 170px;
-    top: -30px; 
+    top: -30px;
+    left: 100px;
   }
 
   .mainDiv {
