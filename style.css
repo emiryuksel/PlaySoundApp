@@ -142,8 +142,8 @@ body {
   }
 
   .logo {
-    width: 230px; /* Smaller size on mobile */
-    height: 230px;
+    width: 210px; /* Smaller size on mobile */
+    height: 210px;
     top: 5px; /* Position closer to the top */
   }
 }
