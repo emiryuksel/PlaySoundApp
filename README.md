@@ -2,6 +2,9 @@
 
 **PlaySound** is a simple, stylish web-based music player designed for both desktop and mobile devices. The app features a responsive layout, enabling seamless functionality across different screen sizes, including mobile adjustments specifically for iPhone SE and other small screens.
 
+### Password
+- **Login PW**: michael
+
 ### Features
 
 - **Responsive Design**: Automatically adjusts to various screen sizes with custom styles for mobile (width 600px and below) and smaller devices (375px and below), ensuring optimal layout and usability on all devices.
