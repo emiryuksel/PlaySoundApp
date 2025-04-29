@@ -72,7 +72,7 @@ function updateProgressBar(e) {
     const progressPercent = (currentTime / duration) * 100;
     progress.style.width = `${progressPercent}%`;
 
-    // Calculate remaining time
+    // Kalan süreyi hesapla
     const remainingTime = duration - currentTime;
     const durationMinutes = Math.floor(remainingTime / 60);
     let durationSeconds = Math.floor(remainingTime % 60);
@@ -97,11 +97,14 @@ function updateProgressBar(e) {
 }
 
 function setProgressBar(e) {
+  //   console.log(e);
   const width = e.srcElement.clientWidth;
+  //   console.log(width);
 
   const { duration } = music;
 
   const clickX = e.offsetX;
+  //   console.log((clickX / width) * duration);
   music.currentTime = (clickX / width) * duration;
 }
 
@@ -109,37 +112,37 @@ playButton.addEventListener("click", () =>
   isPlaying ? pauseSong() : playSong()
 );
 
-let isDragging = false; // To control drag state
+let isDragging = false; // Sürükleme durumunu kontrol etmek için
 
-// Will be triggered when progress bar is clicked
+// İlerleme çubuğuna tıklandığında çalışacak
 progressDiv.addEventListener("mousedown", (e) => {
   isDragging = true;
-  setProgress(e); // Set time when bar is clicked
+  setProgress(e); // Çubuğa tıklayınca zaman ayarla
 });
 
 window.addEventListener("mousemove", (e) => {
-  // Execute only during dragging
+  // Sadece sürükleme sırasında çalıştır
   if (isDragging) {
     setProgress(e);
   }
 });
 
 window.addEventListener("mouseup", () => {
-  // When dragging ends
+  // Sürükleme bittiğinde
   isDragging = false;
 });
 
-// Function to be called during bar click or drag
+// Çubuğa tıklama veya sürükleme sırasında çağrılacak fonksiyon
 function setProgress(e) {
   const width = progressDiv.clientWidth;
   const clickX =
     e.offsetX || e.pageX - progressDiv.getBoundingClientRect().left;
   const { duration } = music;
 
-  // Update time
+  // Zamanı güncelle
   music.currentTime = (clickX / width) * duration;
 
-  // If music isn't playing, start playing on click
+  // Müzik çalmıyorsa, tıklanınca çalmaya başlasın
   if (!isPlaying) {
     playSong();
   }
