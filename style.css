@@ -72,7 +72,7 @@ body {
 
 .timeDiv {
   position: relative;
-  top: -30px;
+  top: -27px;
   display: flex;
   justify-content: space-between;
 }
@@ -93,19 +93,19 @@ body {
 }
 
 .logo {
-  width: 170px;
-  height: 170px; /* Logonun boyutunu belirleyin */
-  background-image: url("logo.png"); /* logo.png dosyasını arka plan olarak ekleyin */
-  background-size: contain; /* Resmin boyutuna göre orantılı şekilde ayarlar */
+  width: 250px;
+  height: 230px; /* Set the size of the logo */
+  background-image: url("logo.png"); /* Add logo.png as a background */
+  background-size: contain; /* Adjust image to fit proportionally */
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10; /* Logoyu diğer elemanların üstüne taşır */
-  filter: brightness(0) invert(1); /* Beyaz renk yapar */
-  opacity: 0.9; /* Hafif şeffaflık ekleyin */
+  z-index: 10; /* Bring the logo to the front */
+  filter: brightness(0) invert(1); /* Make it white */
+  opacity: 0.9; /* Add slight transparency */
 }
 
 /* Add this for mobile responsiveness */
@@ -135,56 +135,23 @@ body {
   }
 
   .progressDiv {
-    height: 7px; /* Daha kalın hale getir */
-    width: 90%; /* Kenarlara daha yakın yap */
-    margin: 20px auto; /* Ortaya hizala */
-    cursor: pointer; /* Mobilde tıklanabilir olduğunu göstermek için */
+    height: 7px; /* Make it thicker */
+    width: 90%; /* Bring it closer to the edges */
+    margin: 20px auto; /* Center align */
+    cursor: pointer; /* Indicate it's clickable on mobile */
   }
 
   .logo {
-    width: 140px; /* Mobilde daha küçük boyut */
-    height: 140px;
-    top: 140px; /* Daha yukarıda durması için */
-  }
-
-  .header {
-    flex-direction: column; /* Header içeriklerini dikey hale getir */
-    height: 75px;
-    padding: 8px; /* Mobilde header padding’i azalt */
-    text-align: center;
-  }
-
-  .header-left {
-    font-size: 1.4em; /* İsim kısmını biraz büyüt */
-    margin-bottom: 8px;
-  }
-
-  .header-right {
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* İkonlar arasındaki boşluk artırıldı */
-  }
-
-  .header-right a {
-    font-size: 1.5em; /* İkon boyutunu büyüt */
-    padding: 8px; /* Tıklama alanını artır */
-    color: #ffffff;
-    transition: color 0.3s;
-  }
-
-  .header-right a:hover {
-    color: #0071e3; /* Hover durumunda ikon rengi değiştir */
-  }
-
-  .logo {
-    display: none;
+    width: 230px; /* Smaller size on mobile */
+    height: 230px;
+    top: 5px; /* Position closer to the top */
   }
 }
 
 @media (max-width: 375px) {
   /* iPhone SE ekran genişliği */
   .logo {
-    width: 170px; /* Küçük ekranda daha iyi görünmesi için boyutu küçült */
+    width: 170px; /* Reduce size for smaller screens */
     height: 170px;
     top: -30px; /* Ekranın üst kısmına daha yakın konumlandır */
   }
@@ -317,4 +284,72 @@ body {
 
 .home-link:hover {
   text-decoration: underline; /* Hover olduğunda alt çizgi */
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1280px) and (min-height: 620px) and (max-height: 720px) {
+  .logo {
+    width: 170px;
+    height: 170px;
+    top: -30px;
+    left: 100px;
+  }
+
+  .mainDiv {
+    width: 350px;
+    height: 450px;
+  }
+
+  .imgDiv {
+    width: 280px;
+    height: 280px;
+    left: 35px;
+  }
+}
+
+.footer-note {
+  font-size: 14px; /* Small font size */
+  color: #888; /* Light gray color */
+  text-align: center; /* Center align */
+  position: fixed; /* Fix to the bottom */
+  bottom: 10px; /* Slightly above the bottom edge */
+  width: 100%; /* Stretch across the width of the page */
+  opacity: 0.6; /* Add transparency */
+}
+
+.progress:hover {
+  background-color: #e0e0e0;
+}
+
+.login-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: #b3b3b3;
+}
+
+.login-screen input,
+.login-screen button {
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.login-screen button {
+  cursor: pointer;
+  background-color: #3c3c3c;
+  color: #b3b3b3;
+}
+
+.login-logo {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 0px;
+  margin: 0;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
 }
