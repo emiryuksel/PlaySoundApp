@@ -4,7 +4,7 @@
 
 ## 🚀 Live Demo
 
-> https://emiryuksel.site/projects/currex
+> https://emiryuksel.site/projects/playsound
 
 #### Login
 
