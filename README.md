@@ -2,6 +2,10 @@
 
 **PlaySound** is a simple, stylish web-based music player designed for both desktop and mobile devices. The app features a responsive layout, enabling seamless functionality across different screen sizes, including mobile adjustments specifically for iPhone SE and other small screens.
 
+## 🚀 Live Demo
+
+> https://emiryuksel.site/projects/currex
+
 #### Login
 
 - **Password**: The default password is `michael`, which can be modified in the `login.js` file if needed.
