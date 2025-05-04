@@ -1,14 +1,20 @@
-## PlaySound Web Application
+# PlaySound
 
 **PlaySound** is a simple, stylish web-based music player designed for both desktop and mobile devices. The app features a responsive layout, enabling seamless functionality across different screen sizes, including mobile adjustments specifically for iPhone SE and other small screens.
+
+---
 
 ## 🚀 Live Demo
 
 > https://emiryuksel.site/projects/playsound
 
+---
+
 #### Login
 
 - **Password**: The default password is `michael`, which can be modified in the `login.js` file if needed.
+
+---
 
 ### Features
 
@@ -17,8 +23,12 @@
 - **Dynamic Progress Bar**: The progress bar tracks playback in real-time and is fully interactive, allowing users to click and seek within the track. On mobile, the progress bar has been made thicker for easier tapping.
 - **Stylish Album Artwork**: Album art dynamically updates based on the currently playing song, providing a visually engaging experience.
 
+---
+
 ### Usage
 
 - **Play/Pause**: Click the play/pause icon to start or stop the track.
 - **Next/Previous**: Use the forward and backward icons to navigate between songs.
 - **Progress Bar**: On mobile, the progress bar is thicker for easier control, allowing users to tap and skip within the track.
+
+---
